@@ -56,7 +56,7 @@ const Banner = () => {
               src="https://lottie.host/83870dfe-7b21-444b-bf2c-75835de93046/tmnkqDujqd.lottie"
               loop
               autoplay
-              className="size-80 sm:size-96 lg:size-[32rem]"
+              className="size-80 sm:size-96 lg:size-[32rem] mx-auto"
             />
           </div>
         </div>
