@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Banner = () => {
-  const texts = ["CODER", "DEVELOPER", "LEARNER", "PROGRAMMER"];
+  const texts = ["DEVELOPER", "CODER", "LEARNER", "PROGRAMMER"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -21,11 +21,13 @@ const Banner = () => {
         backgroundImage: `url(${bannerBg})`,
       }}
     >
-      <div className="hero-content text-neutral-content">
+      <div className="hero-content text-neutral-content max-w-[1400px] mx-auto">
         <div className="flex sm:gap-10 flex-col lg:flex-row md:gap-20 lg:items-center">
-          <div className="mt-24 md:mt-4 md:w-2/3">
-            <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
-              HI, I'M MAHFUZ! <br /> A CREATIVE{" "}
+          <div className="mt-24 lg:mt-4 md:w-2/3">
+            <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
+              HI, I'M MAHFUZ!
+              <br />
+              CREATIVE{" "}
               <span className="text-[#55E6A5] inline-block">
                 <TextTransition springConfig={presets.wobbly}>
                   {texts[index % texts.length]}
@@ -56,7 +58,7 @@ const Banner = () => {
               src="https://lottie.host/83870dfe-7b21-444b-bf2c-75835de93046/tmnkqDujqd.lottie"
               loop
               autoplay
-              className="size-80 sm:size-96 lg:size-[32rem] mx-auto"
+              className="size-80 sm:size-96 lg:size-[35rem] mx-auto"
             />
           </div>
         </div>
