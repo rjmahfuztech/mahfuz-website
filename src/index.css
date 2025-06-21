@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Nav animation  */
 .nav-link > .nav-animation {
   background-image: linear-gradient(
@@ -11,7 +15,6 @@
   );
   background-size: 200% 100%;
   background-position: -100%;
-  display: inline-block;
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
@@ -38,3 +41,5 @@
 .nav-link > .nav-animation:hover::before {
   width: 100%;
 }
+
+/* banner image animation */

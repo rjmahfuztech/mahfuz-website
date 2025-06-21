@@ -1,11 +1,16 @@
-import React from "react";
+import Banner from "../components/Home/Banner";
+import Service from "../components/Home/Service";
 
 const Home = () => {
   return (
-    <div className="text-center ">
-      <h1 className="text-2xl font-bold mt-20 text-red-500">Home page</h1>
-      <button className="text-center btn btn-primary mt-5">click</button>
-    </div>
+    <>
+      <Banner />
+      <div className="bg-[#02050A]">
+        <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
+          <Service />
+        </div>
+      </div>
+    </>
   );
 };
 
