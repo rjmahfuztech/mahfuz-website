@@ -22,8 +22,8 @@ const Banner = () => {
       }}
     >
       <div className="hero-content text-neutral-content">
-        <div className="flex sm:gap-10 flex-col lg:flex-row md:gap-20 items-center">
-          <div className="mt-24 md:w-2/3">
+        <div className="flex sm:gap-10 flex-col lg:flex-row md:gap-20 lg:items-center">
+          <div className="mt-24 md:mt-4 md:w-2/3">
             <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
               HI, I'M MAHFUZ! <br /> A CREATIVE{" "}
               <span className="text-[#55E6A5] inline-block">
@@ -51,7 +51,7 @@ const Banner = () => {
               </button>
             </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 md:mt-0">
             <DotLottieReact
               src="https://lottie.host/83870dfe-7b21-444b-bf2c-75835de93046/tmnkqDujqd.lottie"
               loop
