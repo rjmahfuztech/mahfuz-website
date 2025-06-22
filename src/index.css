@@ -42,4 +42,28 @@ html {
   width: 100%;
 }
 
-/* banner image animation */
+/* project image scroll animation */
+.project-img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #191919;
+  border-radius: 1px;
+  margin: 0 auto;
+}
+.project-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  transition: transform 5s linear;
+  object-fit: cover;
+}
+
+/* Scroll up on hover */
+.project-img:hover img {
+  transform: translateY(-30%);
+}
