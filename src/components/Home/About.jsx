@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="pt-20 md:pt-32 flex gap-10 md:gap-20 xl:gap-28 flex-col md:flex-row pb-32"
+      className="pt-20 md:pt-32 flex gap-10 md:gap-20 xl:gap-28 flex-col md:flex-row"
     >
       <div className="lg:max-w-3xl">
         <div className="">
