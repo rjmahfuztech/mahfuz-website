@@ -96,7 +96,7 @@ const Projects = () => {
           <br /> into Powerful Web Experiences
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-14 pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-14 pb-20 lg:pb-28">
         {projectInfo.map((detail, index) => (
           <ProjectDetails
             key={index}
