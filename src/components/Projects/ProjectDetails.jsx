@@ -77,6 +77,9 @@ const ProjectDetails = ({ detail, modalId }) => {
                   </div>
                 </div>
               </div>
+              <form method="dialog" className="modal-backdrop">
+                <button>close</button>
+              </form>
             </dialog>
           </div>
           <Link
