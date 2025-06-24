@@ -25,10 +25,10 @@ const About = () => {
     >
       <div className="lg:max-w-3xl">
         <div className="">
-          <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">
+          <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
             ABOUT ME
           </h3>
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
             Building the Web with
             <br /> Purpose and Precision
           </h2>

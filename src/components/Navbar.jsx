@@ -103,8 +103,8 @@ const Navbar = () => {
       <div
         className={`transform transition-all duration-500 ease-in-out uppercase nav-link ${
           isOpen
-            ? "opacity-100 translate-y-0 scale-100 visible"
-            : "opacity-0 -translate-y-5 scale-95 invisible"
+            ? "opacity-100 translate-y-0 scale-100 h-full visible"
+            : "opacity-0 -translate-y-5 h-0 scale-95 invisible"
         } lg:hidden text-white mt-16 py-5 space-y-4 border-y border-y-[#55E6A5] bg-[#09101A] text-center`}
       >
         <Link

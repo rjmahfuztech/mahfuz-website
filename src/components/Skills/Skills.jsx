@@ -66,10 +66,10 @@ const Skills = () => {
     <div id="skills" className="bg-[#09101A] py-20 md:py-28">
       <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
         <div className="text-center pb-16 xl:pb-24">
-          <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">
+          <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
             EDUCATION & SKILL
           </h3>
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
             From Fundamentals to <br /> Real-World Skills
           </h2>
         </div>

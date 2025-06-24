@@ -2,14 +2,14 @@ const MyContact = () => {
   return (
     <div className="py-20 md:py-28">
       <div className="text-center">
-        <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">
+        <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
           GET IN TOUCH
         </h3>
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+        <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
           Let’s discuss <br /> about an project!
         </h2>
       </div>
-      <div className="text-white p-4 flex flex-col md:flex-row gap-10 pt-16 md:pt-20">
+      <div className="text-white md:p-4 flex flex-col md:flex-row gap-10 pt-16 md:pt-20">
         <form
           className="bg-[#09101A] px-4 py-8 md:py-14 md:min-w-80 lg:min-w-xl xl:min-w-3xl"
           action=""
@@ -46,7 +46,7 @@ const MyContact = () => {
           <input
             type="submit"
             value="Submit Now"
-            className="mt-8 w-full px-6 py-4 cursor-pointer bg-[#55E6A5] text-black font-semibold text-lg hover:bg-[#141C27] hover:text-white transition-colors duration-500 border-none nav-animation"
+            className="px-4 mt-8 w-full md:px-6 py-2 md:py-4 flex items-center gap-2 cursor-pointer bg-[#55E6A5] text-black font-semibold md:text-lg hover:bg-[#141C27] hover:text-white transition-colors duration-500 border-none nav-animation"
           />
         </form>
         <div className="w-full h-80 md:h-auto">

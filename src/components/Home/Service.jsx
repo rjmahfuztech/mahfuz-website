@@ -26,10 +26,10 @@ const Service = () => {
   return (
     <div id="service" className="pt-20 md:pt-28">
       <div className="text-center pb-16 xl:pb-28">
-        <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">
+        <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
           MY SERVICE
         </h3>
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+        <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
           Transforming Ideas into <br /> Scalable Web Solutions
         </h2>
       </div>

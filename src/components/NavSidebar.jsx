@@ -42,10 +42,10 @@ const NavSidebar = ({ drawerRef, closeDrawer, myLogo }) => {
           {/* Sidebar content here */}
           <div className="px-7 mt-16 mb-8">
             <h3 className="text-xl font-semibold">ABOUT ME</h3>
-            <p className="text-[#a1a3af] mt-6 text-lg">
-              Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-              tempor incididunt ut labore et magna aliqua. Ut enim ad minim
-              veniam laboris.
+            <p className="text-[#a1a3af] mt-6 font-semibold">
+              I'm a self-taught web developer who loves building real projects
+              and solving problems. I enjoy working across the stack and
+              constantly exploring new tools and challenges.
             </p>
             {/* Form */}
             <h3 className="text-xl font-semibold mt-20">GET IN TOUCH</h3>

@@ -4,8 +4,10 @@ const MyBlog = () => {
   return (
     <div className="pt-20 md:pt-28">
       <div>
-        <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">MY BLOG</h3>
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+        <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
+          MY BLOG
+        </h3>
+        <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
           Sharing Insights, Code & Growth
         </h2>
       </div>

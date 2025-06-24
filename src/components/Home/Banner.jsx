@@ -24,7 +24,7 @@ const Banner = () => {
       <div className="hero-content text-neutral-content max-w-[1400px] mx-auto">
         <div className="flex sm:gap-10 flex-col lg:flex-row md:gap-20 lg:items-center">
           <div className="mt-24 lg:mt-4 md:w-2/3">
-            <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold leading-tight">
               HI, I'M MAHFUZ!
               <br />
               CREATIVE{" "}
@@ -34,7 +34,7 @@ const Banner = () => {
                 </TextTransition>
               </span>
             </h1>
-            <p className="text-[#a1a3af] text-lg mt-6 md:mt-8">
+            <p className="text-[#a1a3af] text-lg mt-5 md:mt-8">
               I'm a passionate full-stack web developer with a focus on backend
               development using Python and Django also ReactJs for Front-end.
               With a strong foundation in design principles and a love for clean
@@ -58,7 +58,7 @@ const Banner = () => {
               src="https://lottie.host/83870dfe-7b21-444b-bf2c-75835de93046/tmnkqDujqd.lottie"
               loop
               autoplay
-              className="size-80 sm:size-96 lg:size-[35rem] mx-auto"
+              className="size-72 sm:size-96 lg:size-[35rem] mx-auto"
             />
           </div>
         </div>

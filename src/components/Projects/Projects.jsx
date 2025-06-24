@@ -88,10 +88,10 @@ const Projects = () => {
   return (
     <div id="project" className="pt-20 md:pt-28">
       <div>
-        <h3 className="text-lg text-[#55E6A5] font-semibold mb-2">
+        <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
           MY RECENT PROJECTS
         </h3>
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
+        <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold text-white leading-tight">
           Turning Code and Creativity
           <br /> into Powerful Web Experiences
         </h2>
