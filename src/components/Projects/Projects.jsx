@@ -1,5 +1,6 @@
 import project1Pic from "../../assets/images/project1.jpeg";
 import project2Pic from "../../assets/images/project2.jpeg";
+import FadeIn from "../Animation/FadeIn";
 import ProjectDetails from "./ProjectDetails";
 
 const Projects = () => {
@@ -87,7 +88,7 @@ const Projects = () => {
 
   return (
     <div id="project" className="pt-20 md:pt-28">
-      <div>
+      <FadeIn y={0} x={-50} duration={2} delay={0.3}>
         <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
           MY RECENT PROJECTS
         </h3>
@@ -95,14 +96,19 @@ const Projects = () => {
           Turning Code and Creativity
           <br /> into Powerful Web Experiences
         </h2>
-      </div>
+      </FadeIn>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-14 pb-20 lg:pb-28">
         {projectInfo.map((detail, index) => (
-          <ProjectDetails
+          <FadeIn
             key={index}
-            detail={detail}
-            modalId={`modal_${index}`}
-          />
+            scale={0.8}
+            y={0}
+            x={-50}
+            delay={0.3 * index}
+            duration={2}
+          >
+            <ProjectDetails detail={detail} modalId={`modal_${index}`} />
+          </FadeIn>
         ))}
       </div>
     </div>

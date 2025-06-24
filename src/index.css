@@ -67,3 +67,25 @@ html {
 .project-img:hover img {
   transform: translateY(-30%);
 }
+
+/* Custom scrollbar design  */
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e0e0e; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #55e6a5; /* Scrollbar color */
+  border-radius: 10px;
+  border: 2px solid #0e0e0e; /* Optional: adds padding effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #55e6a5 #0e0e0e;
+}
