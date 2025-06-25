@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
+      <div>
         <MyContact />
       </div>
     </div>

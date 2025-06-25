@@ -39,7 +39,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#02050A]">
-      <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
+      <div className="max-w-[1400px] mx-auto px-4 2xl:px-0">
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 md:gap-16 pb-12 md:pb-16">
           {contactData.map((contact, index) => (
             <div key={index} className="flex items-center gap-4 md:gap-8">
