@@ -31,7 +31,7 @@ const MainLayout = () => {
       {/* scroll to top fixed button */}
       <button
         onClick={() => window.scrollTo(0, 0)}
-        className={`fixed right-4 md:right-6 btn btn-success w-8 h-8 md:w-10 md:h-10 p-0 rounded-full transition-all duration-300 ease-in-out transform ${
+        className={`fixed z-20 right-4 md:right-6 btn btn-success w-8 h-8 md:w-10 md:h-10 p-0 rounded-full transition-all duration-300 ease-in-out transform ${
           isScroll
             ? "bottom-8 opacity-100 translate-y-0"
             : " bottom-0 opacity-0 translate-y-5 pointer-events-none"

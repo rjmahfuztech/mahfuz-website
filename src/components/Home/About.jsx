@@ -1,5 +1,5 @@
 import { HiDownload } from "react-icons/hi";
-import personalPic from "../../assets/images/mahfuz.jpeg";
+import personalPic from "../../assets/images/mahfuz.jpg";
 import {
   FaSquareGithub,
   FaLinkedin,
@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="pt-20 md:pt-32 flex gap-10 md:gap-20 xl:gap-28 flex-col md:flex-row"
+      className="pt-20 md:pt-32 flex gap-10 md:gap-20 xl:gap-28 flex-col lg:flex-row items-center justify-between"
     >
       <div className="lg:max-w-3xl">
         <FadeIn y={0} x={-50} delay={0.2} duration={2}>
@@ -36,7 +36,7 @@ const About = () => {
             </h2>
           </div>
           <div className="flex gap-4 mt-8 md:mt-14">
-            <hr className="w-60 mt-2 h-1 bg-[#55E6A5]" />
+            <hr className="w-60 hidden md:block mt-2 h-1 bg-[#55E6A5]" />
             <div>
               <p className="text-[#a1a3af] text-lg">
                 I'm a self-taught web developer who enjoys learning by building
@@ -69,7 +69,14 @@ const About = () => {
         </FadeIn>
       </div>
       <FadeIn duration={2} delay={0.2}>
-        <img src={personalPic} alt="Person Picture" />
+        <div className="relative mt-10 mr-4 lg:mr-10">
+          <div className="w-[90%] h-[90%] bg-[#55E6A5] absolute -top-3 -right-3 lg:-top-5 lg:-right-5 z-0"></div>
+          <img
+            className="w-full min-w-80 min-h-[400px] max-h-[600px] relative z-10"
+            src={personalPic}
+            alt="Person Picture"
+          />
+        </div>
       </FadeIn>
     </div>
   );
