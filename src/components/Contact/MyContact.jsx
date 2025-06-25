@@ -1,6 +1,9 @@
 import FadeIn from "../Animation/FadeIn";
+import { useSendMail2 } from "../useSendMail";
 
 const MyContact = () => {
+  const { form, sendEmail } = useSendMail2();
+
   return (
     <div className="overflow-x-hidden">
       <div className="py-20 md:py-28 max-w-[1400px] mx-auto px-4 xl:px-0">
@@ -18,16 +21,21 @@ const MyContact = () => {
           <FadeIn y={0} x={-50} duration={2} delay={0.3}>
             <form
               className="bg-[#09101A] px-4 py-8 md:py-14 md:min-w-80 lg:min-w-xl xl:min-w-3xl"
-              action=""
+              ref={form}
+              onSubmit={sendEmail}
             >
               <div className="flex flex-col md:flex-row gap-4 items-center">
                 <input
+                  required
                   type="text"
+                  name="name"
                   placeholder="Your Name"
                   className="input input-lg py-8 bg-[#09101A] border-0 border-b border-b-[#212727] rounded-none w-full focus:outline-none"
                 />
                 <input
-                  type="text"
+                  required
+                  type="email"
+                  name="email"
                   placeholder="Your Email"
                   className="input input-lg py-8 bg-[#09101A] border-0 border-b border-b-[#212727] rounded-none w-full focus:outline-none"
                 />
@@ -35,17 +43,21 @@ const MyContact = () => {
               <div className="flex flex-col md:flex-row gap-4 items-center mt-4 md:mt-8">
                 <input
                   type="number"
+                  name="number"
                   placeholder="Phone Number"
                   className="input input-lg py-8 bg-[#09101A] border-0 border-b border-b-[#212727] rounded-none w-full focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Your Website"
+                  name="website"
                   className="input input-lg py-8 bg-[#09101A] border-0 border-b border-b-[#212727] rounded-none w-full focus:outline-none"
                 />
               </div>
               <textarea
+                required
                 placeholder="Message"
+                name="message"
                 className="textarea textarea-lg mt-4 md:mt-8 px-4 py-6 bg-[#09101A] border-0 border-b border-b-[#212727] rounded-none w-full focus:outline-none"
                 rows={5}
               ></textarea>

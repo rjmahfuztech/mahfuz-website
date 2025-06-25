@@ -1,8 +1,10 @@
 import { FiMenu } from "react-icons/fi";
 import { TbXboxXFilled } from "react-icons/tb";
 import { Link } from "react-router";
+import { useSendMail } from "./useSendMail";
 
 const NavSidebar = ({ drawerRef, closeDrawer, myLogo }) => {
+  const { form, sendEmail } = useSendMail();
   return (
     <div className="drawer drawer-end">
       <input
@@ -49,19 +51,25 @@ const NavSidebar = ({ drawerRef, closeDrawer, myLogo }) => {
             </p>
             {/* Form */}
             <h3 className="text-xl font-semibold mt-20">GET IN TOUCH</h3>
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <input
+                required
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 className="input input-lg mt-4 px-4 py-8 bg-[#09101A] border-[#55E6A5] border-x-2 rounded-none w-full"
               />
               <input
-                type="text"
+                required
+                type="email"
                 placeholder="Your Email"
+                name="email"
                 className="input input-lg mt-4 px-4 py-8 bg-[#09101A] border-[#55E6A5] border-x-2 rounded-none w-full"
               />
               <textarea
+                required
                 placeholder="Message"
+                name="message"
                 className="textarea textarea-lg mt-4 px-4 py-6 bg-[#09101A] border-[#55E6A5] border-x-2 rounded-none w-full"
                 rows={5}
               ></textarea>
