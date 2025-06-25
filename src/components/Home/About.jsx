@@ -57,9 +57,13 @@ const About = () => {
                   </Link>
                 ))}
               </div>
-              <button className="px-4 mt-10 md:px-6 py-2 md:py-4 flex items-center gap-2 cursor-pointer bg-[#55E6A5] text-black font-semibold md:text-lg hover:bg-[#141C27] hover:text-white transition-colors duration-500 border-none nav-animation">
+              <Link
+                target="_blank"
+                to="https://drive.google.com/file/d/1_CDWWhLjyiVYSaptNkIudhadczAq19Ab/view?usp=sharing"
+                className="px-4 w-44 md:w-48 mt-10 md:px-6 py-2 md:py-4 flex items-center justify-center gap-2 cursor-pointer bg-[#55E6A5] text-black font-semibold md:text-lg hover:bg-[#141C27] hover:text-white transition-colors duration-500 border-none nav-animation"
+              >
                 <span>Download CV</span> <HiDownload strokeWidth={0.7} />
-              </button>
+              </Link>
             </div>
           </div>
         </FadeIn>
