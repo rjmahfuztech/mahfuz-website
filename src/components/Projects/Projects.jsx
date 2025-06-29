@@ -1,5 +1,6 @@
 import project1Pic from "../../assets/images/project1.jpeg";
 import project2Pic from "../../assets/images/project2.jpeg";
+import project3Pic from "../../assets/images/project3.jpeg";
 import FadeIn from "../Animation/FadeIn";
 import ProjectDetails from "./ProjectDetails";
 
@@ -84,6 +85,49 @@ const Projects = () => {
         },
       ],
     },
+    {
+      img: project3Pic,
+      name: "PhiMart",
+      title: "PhiMart – Full-Stack E-commerce Platform",
+      description:
+        "PhiMart is a production-ready full-stack e-commerce platform featuring a modern React.js frontend and a robust Django REST API backend. It delivers a complete shopping experience with product discovery, cart management, secure checkout, and user-friendly dashboards for both users and admins.",
+      features: [
+        "JWT Authentication with email verification (Djoser)",
+        "Product listing with dynamic filtering and sorting.",
+        "Add to cart, checkout, and payment functionality.",
+        "Product review system (1 review per user per product).",
+        "Order history and profile management for users.",
+        "Role-based access: Admin dashboard via API control.",
+        "Swagger-powered API documentation with drf-yasg.",
+      ],
+      usedTechnology: [
+        "ReactJs",
+        "Tailwind CSS",
+        "Daisy UI",
+        "Python3",
+        "Django",
+        "DRF",
+        "JWT Authentication",
+        "Supabase",
+        "Payment Stripe",
+        "Vercel",
+      ],
+      links: [
+        {
+          title: "Front-End Code",
+          to: "https://github.com/rjmahfuztech/phimart-client",
+        },
+        { title: "Website Live", to: "https://phimart-ecommerce.vercel.app/" },
+        {
+          title: "Back-End Code",
+          to: "https://github.com/rjmahfuztech/PhiMart",
+        },
+        {
+          title: "API Live",
+          to: "https://phimart-server.vercel.app/swagger/",
+        },
+      ],
+    },
   ];
 
   return (
@@ -97,14 +141,14 @@ const Projects = () => {
           <br /> into Powerful Web Experiences
         </h2>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-14 pb-20 lg:pb-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:mt-14 pb-20 lg:pb-28">
         {projectInfo.map((detail, index) => (
           <FadeIn
             key={index}
             scale={0.8}
             y={0}
             x={-50}
-            delay={0.3 * index}
+            delay={0.2 * index}
             duration={2}
           >
             <ProjectDetails detail={detail} modalId={`modal_${index}`} />

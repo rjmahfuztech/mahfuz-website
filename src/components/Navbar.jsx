@@ -49,24 +49,30 @@ const Navbar = () => {
               Service
             </a>
             <a
-              href="/#project"
-              className="text-sm font-semibold mr-12 nav-animation"
-            >
-              Project
-            </a>
-            <a
               href="/#skills"
               className="text-sm font-semibold mr-12 nav-animation"
             >
               Skills
             </a>
             <Link
+              onClick={() => window.scrollTo(0, 0)}
+              className="text-sm font-semibold mr-12 nav-animation"
+              to="/project"
+            >
+              Project
+            </Link>
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
               className="text-sm font-semibold mr-12 nav-animation"
               to="/blog"
             >
               Blog
             </Link>
-            <Link className="text-sm font-semibold nav-animation" to="/contact">
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
+              className="text-sm font-semibold nav-animation"
+              to="/contact"
+            >
               Contact
             </Link>
           </div>
@@ -128,23 +134,26 @@ const Navbar = () => {
         </a>
         <a
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
-          href="/#project"
-        >
-          Project
-        </a>
-        <a
-          className="text-sm font-semibold nav-animation block w-32 mx-auto"
           href="/#skills"
         >
           Skills
         </a>
         <Link
+          onClick={() => window.scrollTo(0, 0)}
+          className="text-sm font-semibold nav-animation block w-32 mx-auto"
+          to="/project"
+        >
+          Project
+        </Link>
+        <Link
+          onClick={() => window.scrollTo(0, 0)}
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
           to="/blog"
         >
           Blog
         </Link>
         <Link
+          onClick={() => window.scrollTo(0, 0)}
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
           to="/contact"
         >

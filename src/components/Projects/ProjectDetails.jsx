@@ -13,17 +13,20 @@ const ProjectDetails = ({ detail, modalId }) => {
         <h4 className="text-lg md:text-xl font-semibold">{detail.title}</h4>
         <div className="flex items-center justify-center gap-4 mt-4">
           <div>
-            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+            {/* open modal button to show details */}
             <button
               className="btn btn-success"
               onClick={() => document.getElementById(modalId).showModal()}
             >
               See Details
             </button>
-            <dialog id={modalId} className="modal">
+            <dialog
+              id={modalId}
+              className="modal backdrop-blur-sm bg-transparent"
+            >
               <div className="modal-box max-w-[40rem] bg-[#141C27]">
                 <form method="dialog">
-                  {/* if there is a button in form, it will close the modal */}
+                  {/* close modal */}
                   <button className="btn btn-sm btn-circle btn-ghost border absolute right-2 top-2">
                     ✕
                   </button>
