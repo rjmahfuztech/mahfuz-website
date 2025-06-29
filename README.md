@@ -1,12 +1,14 @@
-# React + Vite
+# 🌐 Mahfuz Islam - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website built to showcase my projects, skills, and experience as a full-stack web developer. This portfolio highlights my expertise in frontend and backend development, including technologies like React.js, Tailwind CSS, Django, REST APIs, and more.
 
-Currently, two official plugins are available:
+🔗 **Live Site**: [https://mahfuzislam.vercel.app](https://mahfuzislam.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🙋‍♂️ Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💼 **Portfolio**: [mahfuzislam.vercel.app](https://mahfuzislam.vercel.app)
+- 🐙 **GitHub**: [@rjmahfuztech](https://github.com/rjmahfuztech)
+- 🔗 **LinkedIn**: [@mahfuz-islam](https://linkedin.com/in/mahfuz-islam)
+- 📧 **Email**: [rjmahfuz.islam@gmail.com](mailto:rjmahfuz.islam@gmail.com)
