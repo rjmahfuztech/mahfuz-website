@@ -4,6 +4,7 @@ import Projects from "../components/Projects/Projects";
 import Service from "../components/Home/Service";
 import Skills from "../components/Skills/Skills";
 import MyContact from "../components/Contact/MyContact";
+import Blogs from "../components/Blog/Blogs";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       </div>
       <Skills />
       <div className="bg-[#02050A]">
+        <Blogs />
         <MyContact />
       </div>
     </>

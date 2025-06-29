@@ -1,11 +1,10 @@
-import React from "react";
 import { CgEditBlackPoint } from "react-icons/cg";
 import { Link } from "react-router";
-import MyBlog from "../components/Blog/MyBlog";
+import Blogs from "../components/Blog/Blogs";
 
 const Blog = () => {
   return (
-    <div className="bg-[#02050A] h-screen">
+    <div className="bg-[#02050A] min-h-screen">
       <div className="bg-[#09101A]">
         <div className="max-w-[1400px] mx-auto px-4 2xl:px-0">
           <div className="pt-32 pb-20 md:pb-36 md:pt-60">
@@ -29,8 +28,8 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
-        <MyBlog />
+      <div>
+        <Blogs />
       </div>
     </div>
   );
