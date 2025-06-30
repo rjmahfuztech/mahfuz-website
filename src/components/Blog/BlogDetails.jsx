@@ -11,8 +11,8 @@ const BlogDetails = ({ blog }) => {
           alt="Blog Picture"
         />
       </div>
-      <div className="bg-[#09101A] w-[85%] mx-auto py-5 md:py-8 px-10 relative z-20 shadow-md -mt-10 p-3">
-        <p className="font-medium w-[80%] mx-auto -mt-16 mb-5 bg-[#55E6A5] p-4 text-center">
+      <div className="bg-[#09101A] w-[90%] md:w-[85%] lg:w-[90%] 2xl:w-[85%] mx-auto py-5 md:py-8 px-4 md:px-10 lg:px-4 2xl:px-10 relative z-20 shadow-md -mt-10 p-3">
+        <p className="font-medium w-[80%] mx-auto -mt-12 md:-mt-16 mb-5 bg-[#55E6A5] p-2 md:p-4 text-center">
           {blog.date}
         </p>
         <div className="flex justify-between gap-2">
