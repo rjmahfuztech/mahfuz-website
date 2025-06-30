@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Banner />
       <div className="bg-[#02050A]">
-        <div className="max-w-[1400px] mx-auto px-4 2xl:px-0">
+        <div className="max-w-[1400px] mx-auto px-4">
           <Service />
           <About />
           <Projects />

@@ -65,7 +65,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="bg-[#09101A] py-20 md:py-28 overflow-x-hidden">
-      <div className="max-w-[1400px] mx-auto px-4 2xl:px-0">
+      <div className="max-w-[1400px] mx-auto px-4">
         <FadeIn y={-50} delay={0.3} duration={2}>
           <div className="text-center pb-16 xl:pb-24">
             <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">

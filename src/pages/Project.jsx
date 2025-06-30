@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <div className="bg-[#02050A] min-h-screen">
       <div className="bg-[#09101A]">
-        <div className="max-w-[1400px] mx-auto px-4 2xl:px-0">
+        <div className="max-w-[1400px] mx-auto px-4">
           <div className="pt-32 pb-20 md:pb-36 md:pt-60">
             <div className="flex md:items-center flex-col md:flex-row md:justify-between">
               <h1 className="text-3xl md:text-5xl font-bold text-white">
@@ -28,7 +28,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 xl:px-0">
+      <div className="max-w-[1400px] mx-auto px-4">
         <Projects />
       </div>
     </div>

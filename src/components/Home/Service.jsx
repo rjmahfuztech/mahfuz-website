@@ -9,7 +9,7 @@ const Service = () => {
       icon: FaLaptopCode,
       title: "Front-End Development",
       description:
-        "I build responsive and interactive user interfaces that blend modern design with smooth functionality to deliver seamless web experiences.",
+        "I build responsive and interactive UIs that blend modern design with smooth functionality to deliver seamless web experiences.",
     },
     {
       icon: BiServer,

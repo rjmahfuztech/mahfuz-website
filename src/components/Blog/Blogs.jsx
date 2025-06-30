@@ -24,7 +24,7 @@ const MyBlog = () => {
     },
   ];
   return (
-    <div className="pt-20 md:pt-28 max-w-[1400px] mx-auto px-4 xl:px-0">
+    <div className="pt-20 md:pt-28 max-w-[1400px] mx-auto px-4">
       <FadeIn y={0} x={-50} duration={2} delay={0.3}>
         <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
           MY BLOG

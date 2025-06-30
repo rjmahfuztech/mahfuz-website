@@ -17,7 +17,7 @@ const NavSidebar = ({ drawerRef, closeDrawer, myLogo }) => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer-4"
-          className="drawer-button p-6 bg-[#55E6A5] mr-1 cursor-pointer"
+          className="drawer-button px-6 pt-6 pb-7 bg-[#55E6A5] mr-1 cursor-pointer"
         >
           <FiMenu
             strokeWidth={2}

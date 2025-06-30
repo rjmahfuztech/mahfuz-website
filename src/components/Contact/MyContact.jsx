@@ -6,7 +6,7 @@ const MyContact = () => {
 
   return (
     <div className="overflow-x-hidden">
-      <div className="py-20 md:py-28 max-w-[1400px] mx-auto px-4 xl:px-0">
+      <div className="py-20 md:py-28 max-w-[1400px] mx-auto px-4">
         <FadeIn y={-50} delay={0.3} duration={2}>
           <div className="text-center">
             <h3 className="md:text-lg text-[#55E6A5] font-semibold mb-2">
@@ -17,7 +17,7 @@ const MyContact = () => {
             </h2>
           </div>
         </FadeIn>
-        <div className="text-white md:p-4 flex flex-col md:flex-row gap-10 pt-16 md:pt-20">
+        <div className="text-white flex flex-col md:flex-row gap-10 pt-16 md:pt-20">
           <FadeIn y={0} x={-50} duration={2} delay={0.3}>
             <form
               className="bg-[#09101A] px-4 py-8 md:py-14 md:min-w-80 lg:min-w-xl xl:min-w-3xl"
