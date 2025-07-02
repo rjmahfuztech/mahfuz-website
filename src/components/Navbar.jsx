@@ -1,6 +1,6 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import myLogo from "../assets/images/mahfuz-logo.jpeg";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavSidebar from "./NavSidebar";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
@@ -8,12 +8,26 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const drawerRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const closeDrawer = () => {
     if (drawerRef.current) {
       drawerRef.current.checked = false;
     }
   };
+
+  // for smoothly scroll to section
+  useEffect(() => {
+    // get the hash from the location
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ block: "start" });
+        }, 0); // waiting for dom to render
+      }
+    }
+  }, [location]);
 
   return (
     <>
@@ -36,24 +50,24 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <a
-              href="/#about"
+            <Link
+              to="/#about"
               className="text-sm font-semibold mr-12 nav-animation"
             >
               About
-            </a>
-            <a
-              href="/#service"
+            </Link>
+            <Link
+              to="/#service"
               className="text-sm font-semibold mr-12 nav-animation"
             >
               Service
-            </a>
-            <a
-              href="/#skills"
+            </Link>
+            <Link
+              to="/#skills"
               className="text-sm font-semibold mr-12 nav-animation"
             >
               Skills
-            </a>
+            </Link>
             <Link
               onClick={() => window.scrollTo(0, 0)}
               className="text-sm font-semibold mr-12 nav-animation"
@@ -120,24 +134,24 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <a
+        <Link
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
-          href="/#about"
+          to="/#about"
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
-          href="/#service"
+          to="/#service"
         >
           Service
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
-          href="/#skills"
+          to="/#skills"
         >
           Skills
-        </a>
+        </Link>
         <Link
           onClick={() => window.scrollTo(0, 0)}
           className="text-sm font-semibold nav-animation block w-32 mx-auto"
