@@ -72,7 +72,7 @@ const Projects = () => {
         "Django",
         "JWT Authentication",
         "Email Verification",
-        "Onrender",
+        "Railway",
       ],
       links: [
         {
@@ -81,7 +81,7 @@ const Projects = () => {
         },
         {
           title: "Website Live",
-          to: "https://event-manager-ie3m.onrender.com/",
+          to: "https://event-manager1.up.railway.app/",
         },
       ],
     },
