@@ -52,7 +52,7 @@ const Banner = () => {
                     to="https://drive.google.com/file/d/1_CDWWhLjyiVYSaptNkIudhadczAq19Ab/view?usp=sharing"
                     className="px-4 md:px-6 py-2 md:py-4 flex items-center gap-2 cursor-pointer bg-[#55E6A5] text-black font-semibold md:text-lg hover:bg-[#141C27] hover:text-white transition-colors duration-500 border-none nav-animation"
                   >
-                    <span>Download CV</span> <HiDownload strokeWidth={0.7} />
+                    <span>Resume</span> <HiDownload strokeWidth={0.7} />
                   </Link>
                   <button className="flex items-center gap-2 cursor-pointer group">
                     <MdOutlinePlayCircleFilled className="w-10 h-10 md:w-15 md:h-15 text-[#55E6A5]" />{" "}
