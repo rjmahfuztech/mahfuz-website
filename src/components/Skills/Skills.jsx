@@ -14,7 +14,7 @@ const Skills = () => {
     {
       duration: "April(2024) - May(2025)",
       certificate:
-        "https://drive.google.com/file/d/1sp92qnrXGINFyPBDYOcpHsrJ1w5C-WpM/view?usp=sharing",
+        "https://drive.google.com/file/d/12VHaPDOmOSKFcBgCSHFwITk1-07roKgP/view?usp=sharing",
       title: "CSE Fundamentals with Phitron",
       description:
         "Completed Phitron’s structured CSE and Backend course track. Learned core CSE fundamentals including data structures, algorithms, and problem solving with C++. Built backend skills developing real-world projects.",
