@@ -17,7 +17,7 @@ const About = () => {
       icon: FaSquareFacebook,
       link: "https://web.facebook.com/mahfuz.islam.350967/",
     },
-    { icon: FaSquareXTwitter, link: "https://x.com/MahfuzI87236451" },
+    { icon: FaSquareXTwitter, link: "https://x.com/mahfuz_islamm" },
   ];
   return (
     <div
